@@ -62,4 +62,15 @@ class SolutionTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void example4() {
+        sbStr1.append("AAAAAAAA");
+        sbStr2.append("AAA");
+
+        String expected = "A";
+        String actual = solution.gcdOfStrings(sbStr1.toString(), sbStr2.toString());
+
+        assertEquals(expected, actual);
+    }
 }
